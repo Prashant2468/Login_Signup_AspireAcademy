@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7EEFF"
+    tools:context=".SignupPage">
+    <LinearLayout
+        android:id="@+id/LL_Error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:background="#FD5C5C"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_toperror1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:text="Alert"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_toperror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sora"
+            android:layout_marginTop="7dp"
+            android:text="Please fill the mandatory fields"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="370dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dr_login_back">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10sp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    android:layout_marginTop="18dp"
+                    android:textColor="#0B6DAD"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <!-- Full Name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#45C6FF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Student's Full Name"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textSize="17sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Date of Birth -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="18dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#45C6FF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Date of Birth (DD/MM/YYYY)"
+                        android:inputType="date"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textSize="17sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                <!-- Gender -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Gender:"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <RadioGroup
+                    android:id="@+id/RGgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="#000"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Female"
+                        android:textColor="#000"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Other"
+                        android:textColor="#000"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textSize="15sp" />
+                </RadioGroup>
+                </LinearLayout>
+
+                <!-- Phone Number -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#45C6FF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textSize="17sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Email -->
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="15dp"
+                    app:boxBackgroundMode="outline"
+                    app:boxStrokeColor="#45C6FF">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textSize="17sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Course Dropdown -->
+                <Spinner
+                    android:id="@+id/spinner_course"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    android:background="#F0F0F0"
+                    android:spinnerMode="dropdown" />
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sign Up"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginHorizontal="30dp"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:backgroundTint="#1CA0F6"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    app:cornerRadius="8dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textAlignment="center"
+                        android:textColor="#6F6E6E"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text="Alredy Enroll ?"
+                        />
+                    <TextView
+                        android:id="@+id/txt_jumpon_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ar_one_sans_semibold"
+                        android:textAlignment="center"
+                        android:textColor="#1CA0F6"
+                        android:textStyle="bold"
+                        android:textSize="17sp"
+                        android:text=" Login now"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7EEFF"
+    tools:context=".LoginPage">
+    <LinearLayout
+        android:id="@+id/LL_Error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+        android:background="#FD5C5C"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt_toperror1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sora"
+            android:text="Alert"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_toperror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sora"
+            android:layout_marginTop="7dp"
+            android:text="Please fill the mandatory fields"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="370dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/dr_login_back">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login to your Acount"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/ar_one_sans_semibold"
+                android:layout_marginTop="18dp"
+                android:textColor="#0B6DAD"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginRight="20dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#45C6FF"
+                app:counterEnabled="true"
+                app:counterMaxLength="15"
+                app:boxStrokeErrorColor="#C12920"
+                app:cursorColor="#56ACF0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_enroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    android:hint="Enrollment No"
+                    android:inputType="number"
+                    android:textSize="17sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/txt_error_enroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="22sp"
+                android:fontFamily="@font/ar_one_sans_semibold"
+                android:text="Enrollment No must be 15 Digits"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:layout_marginTop="5dp"
+                android:textColor="#D73A3A"
+                android:layout_gravity="center_horizontal"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="#45C6FF"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#6FB7F2"
+                app:cursorColor="#56ACF0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    android:hint="Password"
+                    android:inputType="numberPassword"
+                    android:textSize="17sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/txt_error_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="22sp"
+                android:visibility="invisible"
+                android:fontFamily="@font/ar_one_sans_semibold"
+                android:text="Invalid Password"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#D73A3A"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ar_one_sans_semibold"
+                android:textAlignment="textEnd"
+                android:paddingRight="15dp"
+                android:textColor="#1CA0F6"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="forgot Password ? "
+                />
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_centerHorizontal="true"
+                android:text="Login"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40sp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:backgroundTint="#1CA0F6"
+                android:fontFamily="@font/ar_one_sans_semibold"
+                app:cornerRadius="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    android:textAlignment="center"
+                    android:textColor="#6F6E6E"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:text="Don't Enroll yet ?  "
+                    />
+                <TextView
+                    android:id="@+id/txt_jumpon_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ar_one_sans_semibold"
+                    android:textAlignment="center"
+                    android:textColor="#1CA0F6"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:text=" Sign up "
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

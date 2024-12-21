@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#E7EEFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="@font/ar_one_sans_semibold"
+        android:text="Welcome to Aspire Academy"
+        android:textAlignment="center"
+        android:textColor="#1CA0F6"
+        android:textSize="35sp" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/img"
+        android:layout_marginBottom="60dp"
+        android:layout_below="@id/heading"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:backgroundTint="#1CA0F6"
+        android:fontFamily="@font/ar_one_sans_semibold"
+        app:cornerRadius="10dp" />
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:text="Sign up"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textColor="#313131"
+        android:backgroundTint="#15999898"
+        android:fontFamily="@font/ar_one_sans_semibold"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>
