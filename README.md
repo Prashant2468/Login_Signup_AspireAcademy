@@ -1,55 +1,51 @@
-# Age calculator app
+# Aspire Academy
 
-This app simply calculate the how old are you in form of years , months and days as respect to current date
-#
+Aspire Academy is an Android application designed for student enrollment and login management. This app provides a seamless way for users to sign up and log in with proper field validations for authentication.
+
+---
 ### 📌Tech Stack 📌
-[![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://github.com/Prashant2468/AgeCalculator/blob/main/index.html#L6)&nbsp;
-[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)](https://github.com/Prashant2468/AgeCalculator/blob/main/index.html#L6)&nbsp;
-[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/Prashant2468/AgeCalculator/blob/main/index.html#L6)
-#
-### 🔗Links🔗
-- Live Site URL <a href="https://prashant2468.github.io/AgeCalculator/" target="_blank"> Age Calculator  🚀</a>
+[![Kotlin](https://img.shields.io/badge/Kotlin%20-%230095D5.svg?&style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)&nbsp;
+[![Android Studio](https://img.shields.io/badge/Android%20Studio%20-%233DDC84.svg?&style=for-the-badge&logo=android-studio&logoColor=white)](https://developer.android.com/studio)&nbsp;
 
-#
-### 🎯 The challenge 🎯
+---
+### Features
 
-Users should be able to:
+- **Sign-Up Page**
+  - Fields: Student's Full Name, Date of Birth, Gender, Phone Number, Email, and Course Selection.
+  - Validations: Ensures valid email format, phone number length, and non-empty fields.
 
-- View an age in years, months, and days after submitting a valid date through the form
-- Receive validation errors if:
-  - Any field is empty when the form is submitted
-  - The day number is not between 1-31
-  - The month number is not between 1-12
-  - The year is in the future
-  - The date is invalid e.g. 31/04/1991 (there are 30 days in April)
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- **Bonus**: See the age numbers animate to their final number when the form is submitted
+- **Login Page**
+  - Fields: Enrollment Number and Password.
+  - Features: Password visibility toggle and "Forgot Password" option.
 
-#
+- **Field Validations**
+  - Password: Enforces strong password criteria.
+  - Email: Valid email format validation.
+  - Phone Number: Ensures proper length and numeric value.
 
-### 📷 Screenshot 📷 
-* UI of Age Calculating App
-#
-![ss](https://github.com/Prashant2468/AgeCalculator/blob/main/design/age1.png)
-* Validations for Empty Fields.
-#
-![ss](https://github.com/Prashant2468/AgeCalculator/blob/main/design/age2.png)
-* Check the condition for Leap year
-#
-![ss](https://github.com/Prashant2468/AgeCalculator/blob/main/design/age3.png)
-* Final Output for Entered Date
-#
-![ss](https://github.com/Prashant2468/AgeCalculator/blob/main/design/age4.png)
+---
+### Screenshots
 
-* Responsive mobile UI
-#
-![ss](https://github.com/Prashant2468/AgeCalculator/blob/main/design/port5.png)
+#### Sign-Up Page
+![Sign-Up Page](appImg1.jpeg)
+
+#### Login Page
+![Login Page](appImg4.jpeg)
+
+---
+### Installation and Setup
+
+1. Clone this repository to your local machine.
+2. Open the project in Android Studio.
+3. Sync the Gradle files and ensure all dependencies are installed.
+4. Build and run the app on an Android emulator or physical device.
+
 
 #
 ### 📝 What you will learn ? 📝 
 
-In this age calculator project You will learn logical concept of age calculating , DOM manipulations dynamicaly and also creative designing.
+In this Aspire Academy app You will learn the Basic Design for Login and SignUp Page.
+Also Different Different types of Validation thats provide more security for our data.
 
 
 <h2>📬 Contact</h2>
