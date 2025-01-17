@@ -26,11 +26,18 @@ Aspire Academy is an Android application designed for student enrollment and log
 ---
 ### Screenshots
 
-#### Sign-Up Page
-![Sign-Up Page](appImg1.jpeg)
+### Welcome  Page
+<img src="https://github.com/Prashant2468/Login_Signup_AspireAcademy/blob/main/app/src/main/res/drawable/appImg3.jpeg" alt="Sign-Up Page" width="200" />
 
-#### Login Page
-![Login Page](appImg4.jpeg)
+### Sign-Up Page
+<img src="https://github.com/Prashant2468/Login_Signup_AspireAcademy/blob/main/app/src/main/res/drawable/appImg1.jpeg" alt="Sign-Up Page" width="200" />
+
+### Login Page
+<img src="https://github.com/Prashant2468/Login_Signup_AspireAcademy/blob/main/app/src/main/res/drawable/appImg4.jpeg" alt="Sign-Up Page" width="200" />
+
+### Validation
+<img src="https://github.com/Prashant2468/Login_Signup_AspireAcademy/blob/main/app/src/main/res/drawable/appImg2.jpeg" alt="Sign-Up Page" width="200" />
+
 
 ---
 ### Installation and Setup
